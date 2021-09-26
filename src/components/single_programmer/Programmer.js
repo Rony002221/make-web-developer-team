@@ -16,7 +16,7 @@ const Programmer = (props) => {
                   <h6 class="card-title">Level : {level}</h6> 
                   <h6 class="card-title">Age : {age}</h6> 
                   <h6 class="card-title">Salary: ${salary}</h6> <hr />
-                  <span><i class="far fa-thumbs-up"></i></span> <button type="button" class="btn btn-primary btn-sm"><i class="far fa-check-circle"></i> Hire Now</button>
+                  <span><i class="far fa-thumbs-up"></i></span> <button type="button" onClick = {()=>props.handleAddMember(props.member)} class="btn btn-primary btn-sm"><i class="far fa-check-circle"></i> Hire Now</button>
                 </div>
               </div>
         </div>

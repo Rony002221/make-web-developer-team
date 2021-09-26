@@ -1,10 +1,22 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../cart/Cart';
 import Programmer from '../single_programmer/Programmer';
 import './Container.css'
 
 const Container = () => {
 
     const [members, setMembers] = useState([]);
+
+    //satae for cart
+    const [cart, setCart] = useState([]);
+
+    //event handler
+    const handleAddMember = (member) =>{
+
+        const newCart = [...cart,member];
+        setCart(newCart);
+    }
+
 
     useEffect(()=>{
         fetch("/data.json")
@@ -23,17 +35,14 @@ const Container = () => {
                 
                 <div className="row p-3">
                    {
-                    members.map(member => <Programmer member = {member}></Programmer>)
+                    members.map(member => <Programmer member = {member} handleAddMember = {handleAddMember}></Programmer>)
 
                    } 
                  
                 </div>
                 
             </div>
-            <div className="cart">
-                <h3 className = "mt-5 pt-5"><i> <i class="fas fa-cart-plus"></i> Total Cost  </i></h3>
-                
-            </div>
+            <Cart></Cart>
         </div>
     );
 };
