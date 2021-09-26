@@ -42,7 +42,8 @@ const Container = () => {
                 </div>
                 
             </div>
-            <Cart></Cart>
+
+            <Cart cart = {cart}></Cart>
         </div>
     );
 };
