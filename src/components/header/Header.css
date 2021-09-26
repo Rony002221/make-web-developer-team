@@ -1,6 +1,6 @@
 .header_Section{
     margin: 0 auto;
-    background-color: rgb(2, 48, 32);
+    background-color: rgb(55, 65, 61);
     color: azure;
     text-align: center;
     line-height: 15px;
@@ -9,5 +9,5 @@
 
 .header_Section h2 span{
     color: rgb(152, 110, 192);
-    text-emphasis-style: inherit;
+    
 }
