@@ -35,7 +35,7 @@ const Container = () => {
                 
                 <div className="row p-3">
                    {
-                    members.map(member => <Programmer member = {member} handleAddMember = {handleAddMember}></Programmer>)
+                    members.map(member => <Programmer key = {member.key} member = {member} handleAddMember = {handleAddMember}></Programmer>)
 
                    } 
                  
