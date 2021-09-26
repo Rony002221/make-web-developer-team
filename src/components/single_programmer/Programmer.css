@@ -1,3 +1,9 @@
 .single_programmer{
     width: 18em;
+    margin-bottom: 30px;
+}
+
+.single_programmer img{
+    height: 200px;
+    
 }

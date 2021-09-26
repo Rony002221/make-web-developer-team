@@ -1,17 +1,15 @@
 .main_container{
-    background-color: antiquewhite;
+    background-color: rgb(238, 236, 234);
     display: grid;
     grid-template-columns: 4fr 1fr;
     padding: 3%;
 }
 
 .team{
-    border: 1px solid red;
     padding: 1%;
 }
 
 .cart{
-    border: 1px solid green;
-    padding: 1%;
+    padding-left: 5%;
     margin-left: 5%;
 }

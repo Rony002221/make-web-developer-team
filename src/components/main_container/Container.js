@@ -4,26 +4,35 @@ import './Container.css'
 
 const Container = () => {
 
-    const [member, setMember] = useState([]);
+    const [members, setMembers] = useState([]);
 
     useEffect(()=>{
         fetch("/data.json")
         .then(res => res.json())
-        .then(data => setMember(data))
+        .then(data => setMembers(data))
     },[]);
 
 
     return (
         <div className = "main_container">
             <div className="team">
-                <h1 className = "text-primary">Programmer's List</h1>
+                <hr />
+                <h2 className = "text-primary text-center">Software Engineer's List</h2>
 
-                <Programmer></Programmer>
-                <Programmer></Programmer>
-                <Programmer></Programmer>
+                <hr />
+                
+                <div className="row p-3">
+                   {
+                    members.map(member => <Programmer member = {member}></Programmer>)
+
+                   } 
+                 
+                </div>
+                
             </div>
             <div className="cart">
-                <h2>Total Cost</h2>
+                <h3 className = "mt-5 pt-5"><i><u> Total Cost </u> </i></h3>
+                
             </div>
         </div>
     );
