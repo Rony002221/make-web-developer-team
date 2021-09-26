@@ -7,3 +7,8 @@
     height: 200px;
     
 }
+
+.single_programmer span i{
+    color: rgb(46, 139, 34);
+    font-size: 25px;
+}

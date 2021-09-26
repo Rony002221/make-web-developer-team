@@ -31,7 +31,7 @@ const Container = () => {
                 
             </div>
             <div className="cart">
-                <h3 className = "mt-5 pt-5"><i><u> Total Cost </u> </i></h3>
+                <h3 className = "mt-5 pt-5"><i> <i class="fas fa-cart-plus"></i> Total Cost  </i></h3>
                 
             </div>
         </div>
